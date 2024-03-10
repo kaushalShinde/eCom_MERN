@@ -38,7 +38,7 @@ connectDB();
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/category', categoryRoute);
 app.use('/api/v1/product', productRoute);
-app.use(express.static(path.join(__dirname, './client/build'));)
+app.use(express.static(path.join(__dirname, './client/build')));
 
 // rest api
 app.use('*', function(req, res) {
